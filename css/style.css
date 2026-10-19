@@ -227,6 +227,7 @@ nav .nav-links {
    list-style: none;
    display: flex;
    gap: 32px;
+   white-space: nowrap;
 }
 
 nav .nav-links .nav-item a {
@@ -275,6 +276,8 @@ nav .nav-links .nav-item a:hover {
 .hero-content {
    max-width: 380px;
    padding-block: 120px;
+   z-index: 1;
+   position: relative;
 }
 
 .hero-para {
@@ -400,7 +403,7 @@ nav .nav-links .nav-item a:hover {
 #donate-sec {
    background: var(--bg-section-red);
    position: relative;
-   padding: 80px;
+   padding: 80px 0;
 }
 
 #donate-sec .btn-green {
@@ -545,6 +548,8 @@ nav .nav-links .nav-item a:hover {
 
 .newsletter-content {
    max-width: 630px;
+   position: relative;
+   z-index: 1;
 }
 
 .newsletter-content p a {
@@ -681,7 +686,6 @@ nav .nav-links .nav-item a:hover {
       transform: scale(1.05);
    }
 
-   /* Background Overlay with Blur */
    .menu-overlay {
       display: block;
       position: fixed;
@@ -702,7 +706,6 @@ nav .nav-links .nav-item a:hover {
       visibility: visible;
    }
 
-   /* Right-Side Offcanvas Drawer */
    .nav-menu {
       position: fixed;
       top: 0;
@@ -783,6 +786,32 @@ nav .nav-links .nav-item a:hover {
       padding-left: 28px;
    }
 
+   #blogs-sec,
+   #impact-sec {
+      padding-block: 80px;
+   }
+
+   .blogs-grid,
+   .impact-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .blog-img1,
+   .blog-img2,
+   .blog-img3,
+   .blog-img4,
+   .newsletter-img1,
+   .newsletter-img2,
+   .newsletter-img3,
+   .donate-img1,
+   .donate-img2,
+   .donate-img3,
+   .impact-img1,
+   .impact-img2,
+   .impact-img3 {
+      display: none;
+   }
+
    .footer-content {
       flex-direction: column;
    }
@@ -797,6 +826,12 @@ nav .nav-links .nav-item a:hover {
    .hero-img {
       position: static;
    }
+
+   #blogs-sec,
+   #donate-sec,
+   #impact-sec {
+      padding-block: 60px;
+   }
 }
 
 @media (max-width: 660px) {
@@ -806,5 +841,17 @@ nav .nav-links .nav-item a:hover {
 
    .footer-brand {
       flex-direction: column;
+   }
+}
+
+@media (max-width: 576px) {
+   .blogs-grid,
+   .impact-grid {
+      grid-template-columns: 1fr;
+   }
+
+   #blogs-sec,
+   #impact-sec {
+      padding-block: 48px;
    }
 }
