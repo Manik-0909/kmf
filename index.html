@@ -1,16 +1,510 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body></body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <!-- Announcement Bar Start -->
+      <div id="announcement-bar">
+         <div class="max-w-container announcement-content">
+            <div class="announcement-links">
+               <a href="https://karl-mcmanus-foundation.giveeasy.org/donations">
+                  CLICK HERE TO MAKE A DONATION
+               </a>
+               <span
+                  ><span>|</span>
+                  <a
+                     href="mailto:For the prevention and cure of tick borne illness in Australia."
+                     >For the prevention and cure of tick borne illness in
+                     Australia.
+                  </a></span
+               >
+            </div>
+
+            <!-- Social Media -->
+            <div class="announcement-socials">
+               <a href="https://www.facebook.com/karlmcmanusfoundation">
+                  <img src="./img/icon/ic-fb-gray.svg" alt="Facebook" />
+               </a>
+
+               <a href="https://twitter.com/KarlMcManusFdn">
+                  <img src="./img/icon/ic-twitter-gray.svg" alt="Twitter" />
+               </a>
+
+               <a href="http://www.linkedin.com/in/mualla-mcmanus-b62b0029?">
+                  <img src="./img/icon/ic-linkedin-gray.svg" alt="Linkedin" />
+               </a>
+
+               <a
+                  href="https://www.youtube.com/channel/UCC-I6GtPz82c2my9IaFV3cA"
+               >
+                  <img src="./img/icon/ic-youtube-gray.svg" alt="Youtube" />
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- Announcement Bar End -->
+
+      <!-- Header Start -->
+      <header id="header">
+         <div class="max-w-container navbar">
+            <a href="#" class="brand-link">
+               <img src="./img/logo.png" alt="Logo" class="nav-brand" />
+            </a>
+
+            <!-- Hamburger Button -->
+            <button
+               class="hamburger"
+               id="menu-toggle"
+               aria-label="Toggle navigation"
+               aria-expanded="false"
+            >
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+               >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     stroke-width="2"
+                     d="M4 6h16M4 12h8m-8 6h16"
+                  />
+               </svg>
+            </button>
+
+            <!-- Navigation / Offcanvas Menu -->
+            <nav class="nav-menu" id="nav-menu">
+               <div class="offcanvas-header">
+                  <img src="./img/logo.png" alt="Logo" class="offcanvas-logo" />
+                  <button
+                     class="close-btn"
+                     id="menu-close"
+                     aria-label="Close menu"
+                  >
+                     &times;
+                  </button>
+               </div>
+               <ul class="nav-links">
+                  <li class="nav-item"><a href="#">Who We Are</a></li>
+                  <li class="nav-item"><a href="#">Research</a></li>
+                  <li class="nav-item"><a href="#">Media</a></li>
+                  <li class="nav-item"><a href="#">How to help</a></li>
+                  <li class="nav-item"><a href="#">News</a></li>
+                  <li class="nav-item"><a href="#">Resources</a></li>
+                  <li class="nav-item"><a href="#">Contact</a></li>
+                  <li class="nav-item"><a href="#">Membership</a></li>
+               </ul>
+            </nav>
+
+            <!-- Blur Overlay -->
+            <div class="menu-overlay" id="menu-overlay"></div>
+         </div>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Section Start -->
+      <section id="hero-sec">
+         <div class="max-w-container">
+            <div class="hero-content">
+               <h1 class="font-heading heading-md fw-bold">
+                  Creating a future where tick-borne diseases are understood,
+                  recognised and treated.
+               </h1>
+               <p class="hero-para">
+                  We’re working to build a better understanding of Australia’s
+                  tick-borne diseases by supporting research, sharing knowledge
+                  and helping bring clearer answers to those affected.
+               </p>
+               <div class="btn btn-white">
+                  <a href="#"> HEAR OUR MISSION </a>
+               </div>
+            </div>
+         </div>
+         <img src="./img/hero-img.png" alt="Hero Image" class="hero-img" />
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- Our Story Section Start -->
+      <section id="story-sec">
+         <div class="relative">
+            <div class="max-w-container">
+               <div class="story-content">
+                  <h2 class="font-heading heading-lg fw-bold">
+                     It started with ONE BITE.
+                  </h2>
+                  <p class="main-para">
+                     Sometimes, one small bite can change everything. Karl
+                     McManus’s story sparked a movement to better understand
+                     tick-borne illness in Australia and help others avoid the
+                     uncertainty he faced. Today, his story continues to inspire
+                     research, awareness and action. Discover Karl’s story and
+                     learn how you can be part of the change.
+                  </p>
+                  <div class="btn btn-white">
+                     <a href="#"> READ OUR STORY </a>
+                  </div>
+               </div>
+            </div>
+            <img src="./img/story-img.png" alt="Hero Image" class="story-img" />
+         </div>
+      </section>
+      <!-- Our Story Section End -->
+
+      <!-- Our Impact Section Start -->
+      <section id="impact-sec">
+         <div class="max-w-container">
+            <h2 class="font-heading heading-md fw-bold text-center">
+               Our Impact
+            </h2>
+
+            <div class="impact-grid">
+               <div class="impact-cards">
+                  <h3 class="font-heading heading-md fw-bold text-center">
+                     593
+                  </h3>
+                  <p class="text-center mt-5">
+                     Karl McManus Foundation members and volunteers.
+                  </p>
+
+                  <img
+                     src="./img/icon/impact-ic1.svg"
+                     alt="Impact Icon"
+                     class="impact-ic1"
+                  />
+               </div>
+
+               <div class="impact-cards">
+                  <h3 class="font-heading heading-md fw-bold text-center">
+                     9853
+                  </h3>
+                  <p class="text-center mt-5">
+                     volunteer hours to support the research and awareness of
+                     tick bites in Australia.
+                  </p>
+               </div>
+
+               <div class="impact-cards">
+                  <h3 class="font-heading heading-md fw-bold text-center">
+                     2392
+                  </h3>
+                  <p class="text-center mt-5">
+                     donors and sponsors supporting our cause.
+                  </p>
+                  <img
+                     src="./img/icon/impact-ic2.svg"
+                     alt="Impact Icon"
+                     class="impact-ic2"
+                  />
+               </div>
+            </div>
+
+            <div class="btn btn-green">
+               <a href="#">LEARN MORE </a>
+            </div>
+         </div>
+
+         <!-- Bg Float Icons -->
+         <img
+            src="./img/impact-img3.png"
+            alt="Impact Icons"
+            class="impact-img3"
+         />
+         <img
+            src="./img/impact-img1.png"
+            alt="Impact Icons"
+            class="impact-img1"
+         />
+         <img
+            src="./img/impact-img2.png"
+            alt="Impact Icons"
+            class="impact-img2"
+         />
+      </section>
+      <!-- Our Impact Section End -->
+
+      <!-- Survey Section Start -->
+      <section id="survey-sec">
+         <div class="relative">
+            <div class="max-w-container">
+               <div class="survey-content">
+                  <h2 class="font-heading heading-lg fw-bold">
+                     Take our tick- bite survey!
+                  </h2>
+                  <p class="main-para">
+                     Been bitten by a tick? Share your experience! Your response
+                     will help advance Australian tick-borne illness research,
+                     improve prevention, and contribute to a healthier future.
+                     Your story could help others stay safer!
+                  </p>
+                  <div class="btn btn-white">
+                     <a href="#"> TAKE THE SURVEY </a>
+                  </div>
+               </div>
+            </div>
+            <img
+               src="./img/survey-img.png"
+               alt="Survey Image"
+               class="story-img"
+            />
+         </div>
+      </section>
+      <!-- Survey Section End -->
+
+      <!-- Donate Section Start -->
+      <section id="donate-sec">
+         <div class="max-w-container max-w-sm">
+            <h2 class="font-heading heading-md fw-bold text-center text-white">
+               Help Prevent Tick Borne Disease, Research the Cause, and Find a
+               Cure
+            </h2>
+
+            <div class="btn btn-green">
+               <a href="#">DONATE NOW </a>
+            </div>
+         </div>
+         <!-- Bg Float Icons -->
+         <img
+            src="./img/donate-img1.png"
+            alt="Donate Icons"
+            class="donate-img1"
+         />
+
+         <img
+            src="./img/donate-img2.png"
+            alt="Donate Icons"
+            class="donate-img2"
+         />
+
+         <img
+            src="./img/donate-img3.png"
+            alt="Donate Icons"
+            class="donate-img3"
+         />
+      </section>
+      <!-- Donate Section End -->
+
+      <!-- Blog News Section Start -->
+      <section id="blogs-sec">
+         <div class="max-w-container relative">
+            <h2 class="font-heading heading-md fw-bold text-center">
+               Latest News
+            </h2>
+
+            <div class="blogs-grid">
+               <div class="blog-cards">
+                  <img src="./img/blog-post-img1.png" alt="Blog Post Image" />
+                  <div class="blog-content">
+                     <div class="publish-date text-xs">August 27, 2026</div>
+                     <h5 class="text-base font-heading">
+                        Dr Mualla McManus at the 18th Annual ILADS Confere
+                     </h5>
+                     <p class="text-sm">
+                        Dr. McManus headed the programme committee in ILADS,
+                        which is the premier tick borne disease educational
+                        society in the world. Each year ILADS conference is
+                        growing bigger with more and more delegates.
+                     </p>
+
+                     <a href="#" class="font-heading"
+                        >Read More
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="1em"
+                           height="1em"
+                           viewBox="0 0 1024 1024"
+                        >
+                           <path d="M0 0h1024v1024H0z" fill="none" />
+                           <path
+                              fill="currentColor"
+                              d="M338.8 104.7a64 64 0 0 0 0 90.5L655.6 512L338.8 828.8a64 64 0 0 0 90.4 90.5l362.1-362a64 64 0 0 0 0-90.5l-362-362.1a64 64 0 0 0-90.5 0"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="blog-cards">
+                  <img src="./img/blog-post-img2.png" alt="Blog Post Image" />
+                  <div class="blog-content">
+                     <div class="publish-date text-xs">August 27, 2026</div>
+                     <h5 class="text-base font-heading">
+                        Dr Mualla McManus at the 18th Annual ILADS Confere
+                     </h5>
+                     <p class="text-sm">
+                        Dr. McManus headed the programme committee in ILADS,
+                        which is the premier tick borne disease educational
+                        society in the world. Each year ILADS conference is
+                        growing bigger with more and more delegates.
+                     </p>
+
+                     <a href="#" class="font-heading"
+                        >Read More
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="1em"
+                           height="1em"
+                           viewBox="0 0 1024 1024"
+                        >
+                           <path d="M0 0h1024v1024H0z" fill="none" />
+                           <path
+                              fill="currentColor"
+                              d="M338.8 104.7a64 64 0 0 0 0 90.5L655.6 512L338.8 828.8a64 64 0 0 0 90.4 90.5l362.1-362a64 64 0 0 0 0-90.5l-362-362.1a64 64 0 0 0-90.5 0"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="blog-cards">
+                  <img src="./img/blog-post-img3.png" alt="Blog Post Image" />
+                  <div class="blog-content">
+                     <div class="publish-date text-xs">August 27, 2026</div>
+                     <h5 class="text-base font-heading">
+                        Dr Mualla McManus at the 18th Annual ILADS Confere
+                     </h5>
+                     <p class="text-sm">
+                        Dr. McManus headed the programme committee in ILADS,
+                        which is the premier tick borne disease educational
+                        society in the world. Each year ILADS conference is
+                        growing bigger with more and more delegates.
+                     </p>
+
+                     <a href="#" class="font-heading"
+                        >Read More
+                        <svg
+                           xmlns="http://www.w3.org/2000/svg"
+                           width="1em"
+                           height="1em"
+                           viewBox="0 0 1024 1024"
+                        >
+                           <path d="M0 0h1024v1024H0z" fill="none" />
+                           <path
+                              fill="currentColor"
+                              d="M338.8 104.7a64 64 0 0 0 0 90.5L655.6 512L338.8 828.8a64 64 0 0 0 90.4 90.5l362.1-362a64 64 0 0 0 0-90.5l-362-362.1a64 64 0 0 0-90.5 0"
+                           />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="btn btn-red">
+               <a href="#">LEARN MORE </a>
+            </div>
+
+            <!-- Bg Float Icons -->
+            <img src="./img/blog-img1.png" alt="Blog Icons" class="blog-img1" />
+            <img src="./img/blog-img2.png" alt="Blog Icons" class="blog-img2" />
+            <img src="./img/blog-img3.png" alt="Blog Icons" class="blog-img3" />
+            <img src="./img/blog-img4.png" alt="Blog Icons" class="blog-img4" />
+         </div>
+      </section>
+      <!-- Blog News Section End -->
+
+      <!-- Newsletter Section Start -->
+      <section id="newsletter-sec">
+         <div class="max-w-container newsletter-content">
+            <h2 class="font-heading heading-lg fw-bold text-center">
+               Join our mailing list to stay up-to-date with all tick news!
+            </h2>
+            <p class="main-para text-center">
+               Read our <a href="#">privacy policy.</a>
+            </p>
+
+            <form class="newsletter-form">
+               <input
+                  type="text"
+                  placeholder="Name*"
+                  class="form-control"
+                  name="name"
+                  id="name"
+               />
+               <input
+                  type="email"
+                  placeholder="Email*"
+                  class="form-control"
+                  name="email"
+                  id="email"
+               />
+               <div class="btn btn-green mt-0">
+                  <a href="#">SUBSCRIBE </a>
+               </div>
+            </form>
+         </div>
+
+         <!-- Bg Float Icons -->
+         <img
+            src="./img/newsletter-img1.png"
+            alt="Newsletter Icons"
+            class="newsletter-img1"
+         />
+
+         <img
+            src="./img/newsletter-img2.png"
+            alt="Newsletter Icons"
+            class="newsletter-img2"
+         />
+
+         <img
+            src="./img/newsletter-img3.png"
+            alt="Newsletter Icons"
+            class="newsletter-img3"
+         />
+      </section>
+      <!-- Newsletter Section End -->
+
+      <!-- Footer Start -->
+      <footer id="footer">
+         <div class="max-w-container footer-content">
+            <div class="footer-brand">
+               <img src="./img/footer-logo.svg" alt="Footer Logo" />
+               <div class="copyright-links">
+                  <span>© Copyright 2026</span>
+                  <span>|</span>
+                  <a href="#">Privacy Policy </a>
+                  <span>|</span>
+                  <a href="#">Terms & Conditions </a>
+                  <span>|</span>
+                  <a href="#">Contact Us </a>
+               </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-socials">
+               <a href="https://www.facebook.com/karlmcmanusfoundation">
+                  <img src="./img/icon/ic-fb.svg" alt="Facebook" />
+               </a>
+
+               <a href="https://twitter.com/KarlMcManusFdn">
+                  <img src="./img/icon/ic-twitter.svg" alt="Twitter" />
+               </a>
+
+               <a href="http://www.linkedin.com/in/mualla-mcmanus-b62b0029?">
+                  <img src="./img/icon/ic-linkedin.svg" alt="Linkedin" />
+               </a>
+
+               <a
+                  href="https://www.youtube.com/channel/UCC-I6GtPz82c2my9IaFV3cA"
+               >
+                  <img src="./img/icon/ic-youtube.svg" alt="Youtube" />
+               </a>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer End -->
+      <script src="./js/script.js"></script>
+   </body>
 </html>
