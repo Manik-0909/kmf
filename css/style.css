@@ -110,6 +110,7 @@ button {
    font-weight: 900;
    text-decoration: none;
    font-family: "Montserrat", sans-serif;
+   text-transform: uppercase;
 }
 
 .btn-white a:hover {
@@ -133,6 +134,7 @@ button {
    font-weight: 900;
    text-decoration: none;
    font-family: "Montserrat", sans-serif;
+   text-transform: uppercase;
 }
 
 .btn-green a:hover {
@@ -152,6 +154,7 @@ button {
    font-weight: 900;
    text-decoration: none;
    font-family: "Montserrat", sans-serif;
+   text-transform: uppercase;
 }
 
 .btn-red a:hover {
