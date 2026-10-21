@@ -692,6 +692,7 @@ nav .nav-links .nav-item a:hover {
    padding: 16px;
    border-radius: 10px;
    text-align: center;
+   font-family: "Poppins", sans-serif;
 }
 
 .newsletter-form .form-control::placeholder {
